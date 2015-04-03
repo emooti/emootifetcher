@@ -7,5 +7,6 @@ RUN apt-get -y install curl vim git maven
 RUN apt-get -y install wget
 VOLUME ["/var/lib/tomcat7/webapps/"]
 WORKDIR /var/lib/tomcat7/webapps/
+# sudo docker run --emooti/emootifetcher --volumes-from sample -d -P emooti/
 ENTRYPOINT ["wget"] 
 CMD ["-?"]
