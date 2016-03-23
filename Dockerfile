@@ -7,6 +7,6 @@ ENV REFRESHED_AT 2015-03-22
 RUN apt-get -y install wget
 VOLUME ["/var/lib/tomcat7/webapps/"]
 WORKDIR /var/lib/tomcat7/webapps/
-# sudo docker run --emooti/emootifetcher --volumes-from sample -d -P emooti/
+# docker run --name fetchtom7 emooti/emootifetcher --volumes-from tom7 -d -P
 ENTRYPOINT ["wget"] 
 CMD ["-?"]
